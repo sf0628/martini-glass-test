@@ -19,25 +19,3 @@ A user will input a number describing the width of the top of the martini glass 
 * The base of the glass should be composed of ‘=’ characters, be ‘n’ characters wide, and 1 character tall. 
 * The program should error if given no argument, or an argument that is not a number.
 * The program should output nothing if given an invalid numeric argument
-
-## Examples
-
-If a user inputs the value 5 the Martini Glass should look like the following:
-%%%%%
- %%%
-  %
-  |
-  |
-  |
-  |
-  |
-=====
-
-If a user inputs the value of 2 the Martini Glass should look like the following:
-%%
-%
-|
-|
-==
-
-
