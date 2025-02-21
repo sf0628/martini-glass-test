@@ -8,7 +8,7 @@ if len(args) != 2 and args[1].isnumeric():
 
 
 def makeLine(glass, width):
-    space = math.floor(width - glass / 2)
+    space = math.floor((width - glass) / 2)
     line = ""
     # initial space
     line += " "*space
@@ -29,5 +29,5 @@ for i in range(width, 0, -2):
         print(makeLine(i-1, width))
 
 for i in range(width):
-    print((width-1)*" " + "|")
-print("  " + "="*width)
+    print((width//2 - 1)*" " + "|")
+print("="*width)
