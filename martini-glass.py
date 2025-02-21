@@ -29,5 +29,5 @@ for i in range(width, 0, -2):
         print(makeLine(i-1, width))
 
 for i in range(width):
-    print((width//2 - 1)*" " + "|")
+    print((math.ceil(width/2 - 1))*" " + "|")
 print("="*width)
