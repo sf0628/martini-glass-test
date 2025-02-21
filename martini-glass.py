@@ -17,10 +17,10 @@ def makeLine(glass, width):
     return line
 
 
-widthPrev = int(args[1])
-width = widthPrev
+width = int(args[1])
+widthAdj = width
 if not width % 2:
-    width += 1
+    widthAdj += 1
 martini = []
 
 for i in range(width, 0, -2):
@@ -28,6 +28,6 @@ for i in range(width, 0, -2):
     if i == 2:
         print(makeLine(i-1, width))
 
-for i in range(widthPrev):
-    print((widthPrev)*" " + "|")
-print("="*width)
+for i in range(width):
+    print((width-1)*" " + "|")
+print("  " + "="*width)
